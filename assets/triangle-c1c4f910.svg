@@ -1,0 +1,13 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="40"
+  height="40"
+  viewBox="-15 -15 230 230"
+>
+  <polygon
+    style="fill: #58b3da; stroke: #58b3da; stroke-width: 20;"
+    stroke-linejoin="round"
+    points="100,0 0,175 200,175"
+  />
+</svg>
