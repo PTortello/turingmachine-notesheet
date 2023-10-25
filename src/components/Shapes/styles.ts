@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  display: "flex";
-  gap: "2px";
+  display: flex;
+  justify-content: space-around;
+  width: 125px;
+  margin-bottom: 10px;
 `;
