@@ -1,10 +1,10 @@
+import Labels from "components/Labels";
 import Rounds from "components/Rounds";
-import Shapes from "components/Shapes";
 
 function App() {
   return (
     <>
-      <Shapes />
+      <Labels />
       <Rounds />
     </>
   );

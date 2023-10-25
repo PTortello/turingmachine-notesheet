@@ -3,10 +3,11 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const Button = styled.button`
-  margin-top: 6px;
+  margin-top: 8px;
   height: 30px;
   width: 120px;
   color: #fefefe;
@@ -14,4 +15,5 @@ export const Button = styled.button`
   border-color: #2db563;
   border-radius: 4px;
   font-weight: bold;
+  user-select: none;
 `;
