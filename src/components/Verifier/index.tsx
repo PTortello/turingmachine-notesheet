@@ -1,4 +1,5 @@
 import { useState } from "react";
+import VerifierIcon from "components/VerifierIcon";
 import { Container, Field } from "./styles";
 
 function Verifier() {
@@ -24,12 +25,8 @@ function Verifier() {
   return (
     <Container>
       {verifications.map((verification, index) => (
-        <Field
-          key={index}
-          className="material-symbols-outlined"
-          onClick={() => handleClick(index)}
-        >
-          {verification}
+        <Field key={index} onClick={() => handleClick(index)}>
+          <VerifierIcon verification={verification} />
         </Field>
       ))}
     </Container>
