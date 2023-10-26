@@ -13,8 +13,8 @@ export const Content = styled.div`
 `;
 
 export const Button = styled.button`
-  height: 30px;
-  width: 60px;
+  height: 36px;
+  width: 70px;
   color: #fefefe;
   background-color: #2db563;
   border-color: #2db563;

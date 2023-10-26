@@ -8,8 +8,10 @@ export const Container = styled.div`
 `;
 
 export const Digit = styled.div`
+  height: 30px;
   width: 40px;
   font-family: "Kalam";
+  font-size: 24px;
   text-align: center;
 `;
 
