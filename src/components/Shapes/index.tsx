@@ -3,9 +3,13 @@ import square from "assets/square.svg";
 import triangle from "assets/triangle.svg";
 import { Container } from "./styles";
 
-function Shapes() {
+interface ShapesProps {
+  horizontal?: boolean;
+}
+
+function Shapes({ horizontal }: ShapesProps) {
   return (
-    <Container>
+    <Container horizontal={horizontal}>
       <img src={triangle} alt="triangle" />
       <img src={square} alt="square" />
       <img src={circle} alt="circle" />

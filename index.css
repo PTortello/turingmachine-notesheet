@@ -5,6 +5,7 @@
   color-scheme: light;
   color: #635994;
   background-color: #fefefe;
+  user-select: none;
   position: relative;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

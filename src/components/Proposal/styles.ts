@@ -11,7 +11,6 @@ export const Digit = styled.div`
   width: 40px;
   font-family: "Kalam";
   text-align: center;
-  user-select: none;
 `;
 
 export const MidDigit = styled(Digit)`

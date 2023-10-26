@@ -5,7 +5,7 @@ import { Container } from "./styles";
 function Labels() {
   return (
     <Container>
-      <Shapes />
+      <Shapes horizontal />
       <Letters />
     </Container>
   );
