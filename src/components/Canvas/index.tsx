@@ -1,14 +1,23 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ReactSketchCanvas, ReactSketchCanvasRef } from "react-sketch-canvas";
 import Toolbar from "components/Toolbar";
 
 function Canvas() {
+  const [eraseMode, setEraseMode] = useState(false);
   const canvasRef = useRef<ReactSketchCanvasRef | null>(null);
-  canvasRef.current && canvasRef.current.eraseMode(false);
+
+  const handleChangeMode = () => {
+    setEraseMode(!eraseMode);
+    canvasRef.current?.eraseMode(!eraseMode);
+  };
 
   return (
     <>
-      <Toolbar />
+      <Toolbar
+        eraseMode={eraseMode}
+        onChangeMode={() => handleChangeMode()}
+        onReset={() => canvasRef.current?.resetCanvas()}
+      />
       <ReactSketchCanvas
         ref={canvasRef}
         style={{ border: "2px solid #2db563" }}
