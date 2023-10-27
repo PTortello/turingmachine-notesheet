@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { CustomButton } from "components/CustomButton/styles";
 
 export const Container = styled.div`
   display: flex;
@@ -12,12 +13,6 @@ export const Content = styled.div`
   justify-content: center;
 `;
 
-export const Button = styled.button`
-  height: 36px;
+export const Button = styled(CustomButton)`
   width: 70px;
-  color: #fefefe;
-  background-color: #2db563;
-  border-color: #2db563;
-  border-radius: 4px;
-  font-weight: bold;
 `;

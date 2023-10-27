@@ -1,11 +1,15 @@
 import Deduce from "components/Deduce";
 import { Button, Container, Content } from "./styles";
 
-function Header() {
+interface HeaderProps {
+  onOpen: () => void;
+}
+
+function Header({ onOpen }: HeaderProps) {
   return (
     <Container>
       <Content>
-        <Button>Reset</Button>
+        <Button onClick={onOpen}>Notes</Button>
       </Content>
       <Deduce />
     </Container>
