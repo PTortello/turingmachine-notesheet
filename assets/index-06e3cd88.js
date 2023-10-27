@@ -132,9 +132,7 @@ Error generating stack: `+l.message+`
   background-color: #fefefe;
   padding: 16px 1vh;
   position: relative;
-`,Qm=G(vl)`
-  margin-top: 16px;
-`,Gm=G.div`
+`,Qm=G.div`
   display: flex;
   width: 100%;
 `,gn=G.div`
@@ -144,7 +142,9 @@ Error generating stack: `+l.message+`
   width: 100%;
   color: #fefefe;
   background-color: #2db563;
-`;function Km({onClose:e}){return z.jsx(Vm,{children:z.jsxs(Hm,{children:[z.jsxs(Gm,{children:[z.jsx(gn,{children:"A"}),z.jsx(gn,{children:"B"}),z.jsx(gn,{children:"C"}),z.jsx(gn,{children:"D"}),z.jsx(gn,{children:"E"}),z.jsx(gn,{children:"F"})]}),z.jsx(Bm,{}),z.jsx(Qm,{onClick:e,children:"Close"})]})})}const Ym=G.div`
+`,Gm=G(vl)`
+  margin-top: 16px;
+`;function Km({onClose:e}){return z.jsx(Vm,{children:z.jsxs(Hm,{children:[z.jsxs(Qm,{children:[z.jsx(gn,{children:"A"}),z.jsx(gn,{children:"B"}),z.jsx(gn,{children:"C"}),z.jsx(gn,{children:"D"}),z.jsx(gn,{children:"E"}),z.jsx(gn,{children:"F"})]}),z.jsx(Bm,{}),z.jsx(Gm,{onClick:e,children:"Close"})]})})}const Ym=G.div`
   display: flex;
   width: 125px;
   justify-content: space-around;
@@ -181,4 +181,4 @@ Error generating stack: `+l.message+`
   align-items: center;
 `,ov=G(vl)`
   margin-top: 16px;
-`;function uv(){const[e,t]=j.useState([0]),n=()=>{const r=[...e];r.push(e[e.length-1]+1),t(r)};return z.jsxs(lv,{children:[e.map(r=>z.jsx(iv,{},r)),z.jsx(ov,{onClick:()=>n(),children:"Add round"})]})}function av(){const[e,t]=j.useState(!0);return z.jsxs(z.Fragment,{children:[z.jsx(_m,{onOpen:()=>t(!0)}),z.jsx(Lm,{}),z.jsx(uv,{}),e&&z.jsx(Km,{onClose:()=>t(!1)})]})}Gl.createRoot(document.getElementById("root")).render(z.jsx(ks.StrictMode,{children:z.jsx(av,{})}));
+`;function uv(){const[e,t]=j.useState([0]),n=()=>{const r=[...e];r.push(e[e.length-1]+1),t(r)};return z.jsxs(lv,{children:[e.map(r=>z.jsx(iv,{},r)),z.jsx(ov,{onClick:()=>n(),children:"Add round"})]})}function av(){const[e,t]=j.useState(!1);return z.jsxs(z.Fragment,{children:[z.jsx(_m,{onOpen:()=>t(!0)}),z.jsx(Lm,{}),z.jsx(uv,{}),e&&z.jsx(Km,{onClose:()=>t(!1)})]})}Gl.createRoot(document.getElementById("root")).render(z.jsx(ks.StrictMode,{children:z.jsx(av,{})}));
