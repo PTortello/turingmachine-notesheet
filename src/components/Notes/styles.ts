@@ -24,10 +24,6 @@ export const Content = styled.div`
   position: relative;
 `;
 
-export const Button = styled(CustomButton)`
-  margin-top: 16px;
-`;
-
 export const TextContainer = styled.div`
   display: flex;
   width: 100%;
@@ -40,4 +36,8 @@ export const Text = styled.div`
   width: 100%;
   color: #fefefe;
   background-color: #2db563;
+`;
+
+export const Button = styled(CustomButton)`
+  margin-top: 16px;
 `;
