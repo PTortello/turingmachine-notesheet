@@ -65,7 +65,7 @@ function Canvas() {
         onStroke={() => handleStroke()}
         style={{ border: "2px solid #2db563" }}
         strokeColor="#635994"
-        strokeWidth={2}
+        eraserWidth={12}
       />
     </>
   );
