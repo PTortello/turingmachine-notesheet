@@ -7,17 +7,17 @@ import { Button, Container } from "./styles";
 
 interface ToolbarProps {
   eraseMode: boolean;
-  onChangeMode: () => void;
+  onChangeMode: (erase: boolean) => void;
   onReset: () => void;
 }
 
 function Toolbar({ eraseMode, onChangeMode, onReset }: ToolbarProps) {
   return (
     <Container>
-      <Button onClick={onChangeMode} active={!eraseMode}>
+      <Button onClick={() => onChangeMode(false)} active={!eraseMode}>
         <img src={!eraseMode ? edit2 : edit} />
       </Button>
-      <Button onClick={onChangeMode} active={eraseMode}>
+      <Button onClick={() => onChangeMode(true)} active={eraseMode}>
         <img src={eraseMode ? eraser2 : eraser} />
       </Button>
       <Button onClick={onReset} reset>

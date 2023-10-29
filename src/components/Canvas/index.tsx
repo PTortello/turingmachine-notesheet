@@ -15,9 +15,9 @@ function Canvas() {
     canvasRef.current?.resetCanvas();
   };
 
-  const handleChangeMode = () => {
-    setEraseMode(!eraseMode);
-    canvasRef.current?.eraseMode(!eraseMode);
+  const handleChangeMode = (erase: boolean) => {
+    setEraseMode(erase);
+    canvasRef.current?.eraseMode(erase);
   };
 
   const handleReset = () => {
@@ -56,7 +56,7 @@ function Canvas() {
       </TextContainer>
       <Toolbar
         eraseMode={eraseMode}
-        onChangeMode={() => handleChangeMode()}
+        onChangeMode={(erase) => handleChangeMode(erase)}
         onReset={() => handleReset()}
       />
       <ReactSketchCanvas
