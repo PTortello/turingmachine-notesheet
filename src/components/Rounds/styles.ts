@@ -7,6 +7,13 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+export const Content = styled.div`
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+`;
+
 export const Button = styled(CustomButton)`
   margin-top: 16px;
 `;

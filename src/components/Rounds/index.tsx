@@ -1,6 +1,7 @@
 import { useState } from "react";
-import RoundRow from "components/RoundRow";
-import { Button, Container } from "./styles";
+import Proposal from "components/Proposal";
+import Verifier from "components/Verifier";
+import { Button, Container, Content } from "./styles";
 
 function Rounds() {
   const [rounds, setRounds] = useState([0]);
@@ -14,7 +15,10 @@ function Rounds() {
   return (
     <Container>
       {rounds.map((round) => (
-        <RoundRow key={round} />
+        <Content key={round}>
+          <Proposal />
+          <Verifier />
+        </Content>
       ))}
       <Button onClick={() => handleClick()}>Add round</Button>
     </Container>

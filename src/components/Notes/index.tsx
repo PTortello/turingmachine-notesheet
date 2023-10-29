@@ -1,5 +1,6 @@
 import Canvas from "components/Canvas";
 import { Button, Container, Content } from "./styles";
+
 interface NotesProps {
   onClose: () => void;
 }

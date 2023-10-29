@@ -1,5 +1,7 @@
 import { INote } from "interfaces/note";
 
+export const INITIAL_DIGITS = [false, false, false, false, false];
+
 export const INITIAL_NOTES: INote[] = [
   {
     label: "A",
@@ -26,3 +28,5 @@ export const INITIAL_NOTES: INote[] = [
     paths: [],
   },
 ];
+
+export const INITIAL_VERIFICATIONS = ["", "", "", "", "", ""];

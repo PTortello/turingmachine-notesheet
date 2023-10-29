@@ -1,10 +1,11 @@
 import { useState } from "react";
-import VerifierIcon from "components/VerifierIcon";
+import { INITIAL_VERIFICATIONS } from "constants/initialValues";
 import { stringSwitcher } from "utils/stringSwitcher";
+import VerifierIcon from "components/VerifierIcon";
 import { Container, Field } from "./styles";
 
 function Verifier() {
-  const [verifications, setVerifications] = useState(["", "", "", "", "", ""]);
+  const [verifications, setVerifications] = useState(INITIAL_VERIFICATIONS);
 
   const handleClick = (index: number) => {
     const newVerifications = [...verifications];

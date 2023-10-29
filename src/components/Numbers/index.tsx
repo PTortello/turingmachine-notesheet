@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { INITIAL_DIGITS } from "constants/initialValues";
 import { Container, Slash, Text } from "./styles";
 
 function Numbers() {
-  const [digits, setDigits] = useState([false, false, false, false, false]);
+  const [digits, setDigits] = useState(INITIAL_DIGITS);
 
   const handleClick = (index: number) => {
     const newDigits = [...digits];
