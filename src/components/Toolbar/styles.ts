@@ -4,18 +4,18 @@ import { CustomButton } from "components/CustomButton/styles";
 export const Container = styled.div`
   position: absolute;
   top: 62px;
-  right: 8px;
+  right: 16px;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 `;
 
 export const Button = styled(CustomButton)<{
   active?: boolean;
   reset?: boolean;
 }>`
-  height: 40px;
-  width: 40px;
+  height: 42px;
+  width: 42px;
   background-color: ${({ active }) => (active ? "#2db563" : "#fefefe")};
   border-color: ${({ reset }) => reset && "#ff0000"};
 `;
