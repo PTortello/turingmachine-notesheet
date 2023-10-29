@@ -1,5 +1,6 @@
 import { useState } from "react";
 import VerifierIcon from "components/VerifierIcon";
+import { stringSwitcher } from "utils/stringSwitcher";
 import { Container, Field } from "./styles";
 
 function Verifier() {
@@ -7,18 +8,7 @@ function Verifier() {
 
   const handleClick = (index: number) => {
     const newVerifications = [...verifications];
-    let newString = "";
-    switch (verifications[index]) {
-      case "":
-        newString = "close";
-        break;
-      case "close":
-        newString = "check";
-        break;
-      default:
-        break;
-    }
-    newVerifications[index] = newString;
+    newVerifications[index] = stringSwitcher(newVerifications[index]);
     setVerifications(newVerifications);
   };
 
