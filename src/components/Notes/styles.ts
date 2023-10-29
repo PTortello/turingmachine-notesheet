@@ -14,28 +14,13 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 70vh;
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fefefe;
-  padding: 16px 1vh;
+  padding: 8px 1vh 16px;
   position: relative;
-`;
-
-export const TextContainer = styled.div`
-  display: flex;
-  width: 100%;
-`;
-
-export const Text = styled.div`
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  color: #fefefe;
-  background-color: #2db563;
 `;
 
 export const Button = styled(CustomButton)`
