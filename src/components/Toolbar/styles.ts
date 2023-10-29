@@ -3,8 +3,8 @@ import { CustomButton } from "components/CustomButton/styles";
 
 export const Container = styled.div`
   position: absolute;
-  top: 62px;
-  right: 16px;
+  top: 58px;
+  right: 14px;
   display: flex;
   flex-direction: column;
   gap: 4px;
