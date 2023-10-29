@@ -1,7 +1,7 @@
 {
   "name": "tm-notesheet",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://ptortello.github.io/turingmachine-notesheet/",
   "type": "module",
   "scripts": {
