@@ -1,6 +1,6 @@
 import { canvasContext, useValueCanvas } from "contexts/canvasContext";
 
-function ContextProvider({ children }: React.PropsWithChildren) {
+function AppProvider({ children }: React.PropsWithChildren) {
   return (
     <canvasContext.Provider value={useValueCanvas()}>
       {children}
@@ -8,4 +8,4 @@ function ContextProvider({ children }: React.PropsWithChildren) {
   );
 }
 
-export default ContextProvider;
+export default AppProvider;
