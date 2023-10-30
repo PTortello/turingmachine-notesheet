@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.div`
-  color: #2db563;
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: 28px;
   font-weight: bold;
 `;

@@ -9,12 +9,12 @@ export const Container = styled.div`
 export const Text = styled.div`
   width: 20px;
   padding-left: 10px;
-  color: #2db563;
+  color: ${({ theme }) => theme.colors.secondary};
   font-family: "Share Tech Mono";
   font-size: 22px;
 `;
 
 export const Slash = styled.div`
   position: absolute;
-  color: #635994;
+  color: ${({ theme }) => theme.colors.pen};
 `;

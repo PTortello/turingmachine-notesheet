@@ -18,7 +18,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fefefe;
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 8px 1vh 16px;
   position: relative;
 `;

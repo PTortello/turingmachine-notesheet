@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 125px;
   justify-content: space-around;
-  border-bottom: 2px solid #2db563;
+  border-bottom: ${({ theme }) => theme.border};
 `;
 
 export const Digit = styled.div`
@@ -16,6 +16,5 @@ export const Digit = styled.div`
 `;
 
 export const MidDigit = styled(Digit)`
-  border-left: 2px solid #2db563;
-  border-right: 2px solid #2db563;
+  border-inline: ${({ theme }) => theme.border};
 `;

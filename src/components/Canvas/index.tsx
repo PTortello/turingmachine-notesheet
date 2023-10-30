@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ReactSketchCanvas, ReactSketchCanvasRef } from "react-sketch-canvas";
 import useCanvasContext from "hooks/useCanvasContext";
+import { theme } from "utils/theme";
 import Toolbar from "components/Toolbar";
 import { Text, TextContainer } from "./styles";
 
@@ -63,8 +64,8 @@ function Canvas() {
         ref={canvasRef}
         height="60vh"
         onStroke={() => handleStroke()}
-        style={{ border: "2px solid #2db563" }}
-        strokeColor="#635994"
+        style={{ border: theme.border }}
+        strokeColor={theme.colors.pen}
         eraserWidth={12}
       />
     </>

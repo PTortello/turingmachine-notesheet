@@ -8,5 +8,6 @@ declare module "@emotion/react" {
       pen: string;
       reset: string;
     };
+    border: string;
   }
 }

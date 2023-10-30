@@ -1,5 +1,5 @@
-import check from "assets/check.svg";
-import close from "assets/close.svg";
+import check from "assets/images/check.svg";
+import close from "assets/images/close.svg";
 
 interface VerifierIconProps {
   verification: string;

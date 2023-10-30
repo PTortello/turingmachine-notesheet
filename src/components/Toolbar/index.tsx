@@ -1,8 +1,8 @@
-import edit from "assets/edit.svg";
-import edit2 from "assets/edit2.svg";
-import eraser from "assets/eraser.svg";
-import eraser2 from "assets/eraser2.svg";
-import reset from "assets/reset.svg";
+import edit from "assets/images/edit.svg";
+import edit2 from "assets/images/edit2.svg";
+import eraser from "assets/images/eraser.svg";
+import eraser2 from "assets/images/eraser2.svg";
+import reset from "assets/images/reset.svg";
 import { Button, Container } from "./styles";
 
 interface ToolbarProps {

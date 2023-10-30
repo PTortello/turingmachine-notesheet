@@ -1,6 +1,6 @@
-import circle from "assets/circle.svg";
-import square from "assets/square.svg";
-import triangle from "assets/triangle.svg";
+import circle from "assets/images/circle.svg";
+import square from "assets/images/square.svg";
+import triangle from "assets/images/triangle.svg";
 import { Container } from "./styles";
 
 interface ShapesProps {

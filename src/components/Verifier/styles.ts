@@ -12,6 +12,6 @@ export const Field = styled.div`
   justify-content: center;
   height: 26px;
   width: 26px;
-  border: 2px solid #2db563;
+  border: ${({ theme }) => theme.border};
   border-radius: 4px;
 `;

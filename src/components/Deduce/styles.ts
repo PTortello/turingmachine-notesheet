@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding-left: 8px;
   padding-top: 4px;
   gap: 8px;
-  border: 2px solid #2db563;
+  border: ${({ theme }) => theme.border};
   border-radius: 8px;
   width: 250px;
 `;

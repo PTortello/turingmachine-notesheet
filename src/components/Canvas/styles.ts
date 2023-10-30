@@ -10,6 +10,8 @@ export const Text = styled.div<{ active?: boolean }>`
   font-weight: bold;
   text-align: center;
   width: 100%;
-  color: ${({ active }) => (active ? "#fefefe" : "#2db563")};
-  background-color: ${({ active }) => (active ? "#2db563" : "#fefefe")};
+  color: ${({ active, theme }) =>
+    active ? theme.colors.primary : theme.colors.secondary};
+  background-color: ${({ active, theme }) =>
+    active ? theme.colors.secondary : theme.colors.primary};
 `;

@@ -16,6 +16,7 @@ export const Button = styled(CustomButton)<{
 }>`
   height: 42px;
   width: 42px;
-  background-color: ${({ active }) => (active ? "#2db563" : "#fefefe")};
-  border-color: ${({ reset }) => reset && "#ff0000"};
+  background-color: ${({ active, theme }) =>
+    active ? theme.colors.secondary : theme.colors.primary};
+  border-color: ${({ reset, theme }) => reset && theme.colors.reset};
 `;
