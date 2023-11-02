@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { t } from "utils/translate";
 import Proposal from "components/Proposal";
 import Verifier from "components/Verifier";
 import { Button, Container, Content } from "./styles";
@@ -20,7 +21,7 @@ function Rounds() {
           <Verifier />
         </Content>
       ))}
-      <Button onClick={() => handleClick()}>Add round</Button>
+      <Button onClick={() => handleClick()}>{t("ADD_ROUND")}</Button>
     </Container>
   );
 }

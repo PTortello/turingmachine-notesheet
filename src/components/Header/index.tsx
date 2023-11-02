@@ -1,3 +1,4 @@
+import { t } from "utils/translate";
 import Deduce from "components/Deduce";
 import { Button, Container, Content } from "./styles";
 
@@ -9,7 +10,7 @@ function Header({ onOpen }: HeaderProps) {
   return (
     <Container>
       <Content>
-        <Button onClick={onOpen}>Notes</Button>
+        <Button onClick={onOpen}>{t("NOTES")}</Button>
       </Content>
       <Deduce />
     </Container>
