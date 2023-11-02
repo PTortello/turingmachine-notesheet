@@ -160,7 +160,7 @@ Error generating stack: `+o.message+`
   text-align: center;
 `,fv=Q(sl)`
   border-inline: ${({theme:e})=>e.border};
-`;function dv(){const[e,t]=$.useState([1,1,1]),n=r=>{const i=[...e];i[r]=e[r]===5?1:e[r]+1,t(i)};return I.jsxs(cv,{children:[I.jsx(sl,{onClick:()=>n(0),children:e[0]}),I.jsx(fv,{onClick:()=>n(1),children:e[1]}),I.jsx(sl,{onClick:()=>n(2),children:e[2]})]})}const pv=e=>{let t="";switch(e){case"":t="close";break;case"close":t="check";break}return t},hv="/turingmachine-notesheet/assets/check-2057373f.svg",gv="/turingmachine-notesheet/assets/close-52f65db8.svg";function mv({verification:e}){const t={close:gv,check:hv};return t[e]&&I.jsx("img",{src:t[e]})}const vv=Q.div`
+`;function dv(){const[e,t]=$.useState([0,0,0]),n=i=>e[i]>0?e[i]:"",r=i=>{const o=[...e];o[i]=e[i]===5?1:e[i]+1,t(o)};return I.jsxs(cv,{children:[I.jsx(sl,{onClick:()=>r(0),children:n(0)}),I.jsx(fv,{onClick:()=>r(1),children:n(1)}),I.jsx(sl,{onClick:()=>r(2),children:n(2)})]})}const pv=e=>{let t="";switch(e){case"":t="close";break;case"close":t="check";break}return t},hv="/turingmachine-notesheet/assets/check-2057373f.svg",gv="/turingmachine-notesheet/assets/close-52f65db8.svg";function mv({verification:e}){const t={close:gv,check:hv};return t[e]&&I.jsx("img",{src:t[e]})}const vv=Q.div`
   display: flex;
   justify-content: space-around;
   width: 210px;
