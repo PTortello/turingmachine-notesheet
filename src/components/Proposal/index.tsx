@@ -2,7 +2,12 @@ import { useState } from "react";
 import { Container, Digit, MidDigit } from "./styles";
 
 function Proposal() {
-  const [digits, setDigits] = useState([1, 1, 1]);
+  const [digits, setDigits] = useState([0, 0, 0]);
+
+  const getDigit = (index: number) => {
+    const digit = digits[index] > 0 ? digits[index] : "";
+    return digit;
+  };
 
   const handleClick = (index: number) => {
     const newDigits = [...digits];
@@ -12,9 +17,9 @@ function Proposal() {
 
   return (
     <Container>
-      <Digit onClick={() => handleClick(0)}>{digits[0]}</Digit>
-      <MidDigit onClick={() => handleClick(1)}>{digits[1]}</MidDigit>
-      <Digit onClick={() => handleClick(2)}>{digits[2]}</Digit>
+      <Digit onClick={() => handleClick(0)}>{getDigit(0)}</Digit>
+      <MidDigit onClick={() => handleClick(1)}>{getDigit(1)}</MidDigit>
+      <Digit onClick={() => handleClick(2)}>{getDigit(2)}</Digit>
     </Container>
   );
 }
